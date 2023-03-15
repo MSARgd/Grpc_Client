@@ -12,40 +12,43 @@ public class BankClientGrpcMFulldiplex {
                 .usePlaintext()
                 .build();
         BankServiceGrpc.BankServiceStub asyncStub = BankServiceGrpc.newStub(managedChannel);
-        Bank.ConvertCurrencyRequest request = Bank.ConvertCurrencyRequest.newBuilder()
-                .setCurrencyFrom("MRO")
-                .setCurrencyTo("DH")
-                .setAmount(100)
-                .build();
+//        Bank.ConvertCurrencyRequest request = Bank.ConvertCurrencyRequest.newBuilder()
+//                .setCurrencyFrom("MRO")
+//                .setCurrencyTo("DH")
+//                .setAmount(1)
+//                .build();
         StreamObserver<Bank.ConvertCurrencyRequest> performStream = asyncStub.fullCurrencyStream(new StreamObserver<Bank.ConvertCurrencyResponse>() {
             @Override
             public void onNext(Bank.ConvertCurrencyResponse convertCurrencyResponse) {
-                System.out.println("=======================");
-                System.out.println(convertCurrencyResponse.getResult());
-                System.out.println("=================================");
+
+                System.out.println("Server :  "+"\033[38;2;0q;0;255m  Resultat : "+convertCurrencyResponse.getResult()+  "\033[0m");
+
             }
             @Override
             public void onError(Throwable throwable) {
+                System.out.println(throwable.getMessage());
             }
             @Override
             public void onCompleted() {
                 System.out.println(".....END");
             }
         });
-
         Timer timer = new Timer();
         timer.schedule(new TimerTask() {
             int counter =0;
             @Override
             public void run() {
                 ++counter;
-                Bank.ConvertCurrencyRequest  request1 = Bank.ConvertCurrencyRequest.newBuilder()
+                Bank.ConvertCurrencyRequest  request = Bank.ConvertCurrencyRequest.newBuilder()
                                 .setCurrencyFrom("USD")
                                 .setCurrencyTo("EUR")
-                                .setAmount(1000)
+                                .setAmount(Math.random()*100)
                                 .build();
-                performStream.onNext(request1);
-                System.out.println(request1);
+                System.out.println( "Client :   "+
+                        "CurrencyFrom : "+ request.getCurrencyFrom()
+                        +"   CurrencyTo : "+ request.getCurrencyTo()
+                        +"   Amount : "+request.getAmount());
+                performStream.onNext(request);
                 if (counter==10){
                     performStream.onCompleted();
                     timer.cancel();

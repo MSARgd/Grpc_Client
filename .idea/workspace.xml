@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4ef9940-426a-4ce3-a710-c06a5b842f53" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpcMFulldiplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpcMFulldiplex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpcMFulldiplex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +61,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ma.enset.client" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="BankClientGrpcMFulldiplex" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.BankClientGrpcMFulldiplex">
     <configuration name="BankClientGrpc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -151,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678716238230</updated>
       <workItem from="1678716239415" duration="7008000" />
-      <workItem from="1678872923585" duration="2504000" />
+      <workItem from="1678872923585" duration="4213000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <created>1678868132247</created>
