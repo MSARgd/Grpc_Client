@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4ef9940-426a-4ce3-a710-c06a5b842f53" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpcMFulldiplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bank.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bank.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +54,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -62,9 +66,9 @@
       <recent name="ma.enset.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.bankClientGrpc3">
-    <configuration name="bankClientGrpc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.client.bankClientGrpc1" />
+  <component name="RunManager" selected="Application.BankClientGrpcMFulldiplex">
+    <configuration name="BankClientGrpc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.client.BankClientGrpc1" />
       <module name="Grpc_Client" />
       <extension name="coverage">
         <pattern>
@@ -76,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bankClientGrpc2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.client.bankClientGrpc2" />
+    <configuration name="BankClientGrpc2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.client.BankClientGrpc2" />
       <module name="Grpc_Client" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bankClientGrpc3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.client.bankClientGrpc3" />
+    <configuration name="BankClientGrpc3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.client.BankClientGrpc3" />
       <module name="Grpc_Client" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +106,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bankClientGrpc4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ma.enset.client.bankClientGrpc4" />
+    <configuration name="BankClientGrpc4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.client.BankClientGrpc4" />
+      <module name="Grpc_Client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.enset.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankClientGrpcMFulldiplex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.enset.client.BankClientGrpcMFulldiplex" />
       <module name="Grpc_Client" />
       <extension name="coverage">
         <pattern>
@@ -117,10 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.bankClientGrpc3" />
-        <item itemvalue="Application.bankClientGrpc2" />
-        <item itemvalue="Application.bankClientGrpc1" />
-        <item itemvalue="Application.bankClientGrpc4" />
+        <item itemvalue="Application.BankClientGrpcMFulldiplex" />
+        <item itemvalue="Application.BankClientGrpc4" />
+        <item itemvalue="Application.BankClientGrpc3" />
+        <item itemvalue="Application.BankClientGrpc2" />
+        <item itemvalue="Application.BankClientGrpc1" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +151,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678716238230</updated>
       <workItem from="1678716239415" duration="7008000" />
-      <workItem from="1678872923585" duration="13000" />
+      <workItem from="1678872923585" duration="2504000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <created>1678868132247</created>
@@ -167,9 +185,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ma/enset/client/bankClientGrpc2.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ma/enset/client/BankClientGrpc2.java</url>
           <line>11</line>
-          <properties class="ma.enset.client.bankClientGrpc2" method="main">
+          <properties class="ma.enset.client.BankClientGrpc2" method="main">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>

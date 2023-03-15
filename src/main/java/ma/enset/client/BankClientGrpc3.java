@@ -8,23 +8,25 @@ import ma.enset.subs.BankServiceGrpc;
 
 import java.io.IOException;
 
-public class bankClientGrpc2 {
+public class
+BankClientGrpc3 {
     public static void main(String[] args) throws IOException {
-        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost",2023)
+        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 2023)
                 .usePlaintext()
                 .build();
-        BankServiceGrpc.BankServiceStub  asyncStub = BankServiceGrpc.newStub(managedChannel);
-        Bank.ConvertCurrencyRequest request =  Bank.ConvertCurrencyRequest.newBuilder()
+        BankServiceGrpc.BankServiceStub asyncStub = BankServiceGrpc.newStub(managedChannel);
+        Bank.ConvertCurrencyRequest request = Bank.ConvertCurrencyRequest.newBuilder()
                 .setCurrencyFrom("MRO")
                 .setCurrencyTo("DAH")
                 .setAmount(200)
                 .build();
 
-        asyncStub.convert(request, new StreamObserver<Bank.ConvertCurrencyResponse>() {
+        asyncStub.getCurrencyStream(request, new StreamObserver<Bank.ConvertCurrencyResponse>() {
             @Override
             public void onNext(Bank.ConvertCurrencyResponse convertCurrencyResponse) {
-                System.out.println("**************************************");
+                System.out.println("============================");
                 System.out.println(convertCurrencyResponse);
+
             }
 
             @Override
@@ -34,11 +36,12 @@ public class bankClientGrpc2 {
 
             @Override
             public void onCompleted() {
-                System.out.println("END......");
+                System.out.println("END.....");
+
             }
+
         });
-        System.out.println("............waiting for message......");
+        System.out.println("waiting for message ");
         System.in.read();
     }
-
 }
