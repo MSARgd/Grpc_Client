@@ -9,7 +9,8 @@ import ma.enset.subs.BankServiceGrpc;
 
 import java.io.IOException;
 
-public class bankClientGrpc3 {
+public class
+bankClientGrpc3 {
     public static void main(String[] args) throws IOException {
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 2023)
                 .usePlaintext()

@@ -4,7 +4,7 @@ service  BankService{
     rpc convert(ConvertCurrencyRequest) returns(ConvertCurrencyResponse);// Unary Model
     rpc getCurrencyStream(ConvertCurrencyRequest) returns(stream ConvertCurrencyResponse);// Server Streaming Model
     rpc performStream(stream ConvertCurrencyRequest) returns(ConvertCurrencyResponse); // Client Streaming Model
-    rpc fullCurrencyStream(stream ConvertCurrencyRequest) returns(ConvertCurrencyResponse); // Bi-directionnel Streaming
+    rpc fullCurrencyStream(stream ConvertCurrencyRequest) returns(stream ConvertCurrencyResponse); // Bi-directionnel Streaming
 }
 message ConvertCurrencyRequest{
   string currencyFrom =1;

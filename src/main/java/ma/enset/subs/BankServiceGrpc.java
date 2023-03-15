@@ -130,7 +130,7 @@ public final class BankServiceGrpc {
       fullMethodName = SERVICE_NAME + '/' + "fullCurrencyStream",
       requestType = ma.enset.subs.Bank.ConvertCurrencyRequest.class,
       responseType = ma.enset.subs.Bank.ConvertCurrencyResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
   public static io.grpc.MethodDescriptor<ma.enset.subs.Bank.ConvertCurrencyRequest,
       ma.enset.subs.Bank.ConvertCurrencyResponse> getFullCurrencyStreamMethod() {
     io.grpc.MethodDescriptor<ma.enset.subs.Bank.ConvertCurrencyRequest, ma.enset.subs.Bank.ConvertCurrencyResponse> getFullCurrencyStreamMethod;
@@ -139,7 +139,7 @@ public final class BankServiceGrpc {
         if ((getFullCurrencyStreamMethod = BankServiceGrpc.getFullCurrencyStreamMethod) == null) {
           BankServiceGrpc.getFullCurrencyStreamMethod = getFullCurrencyStreamMethod = 
               io.grpc.MethodDescriptor.<ma.enset.subs.Bank.ConvertCurrencyRequest, ma.enset.subs.Bank.ConvertCurrencyResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(
                   "BankService", "fullCurrencyStream"))
               .setSampledToLocalTracing(true)
@@ -247,7 +247,7 @@ public final class BankServiceGrpc {
                   this, METHODID_PERFORM_STREAM)))
           .addMethod(
             getFullCurrencyStreamMethod(),
-            asyncClientStreamingCall(
+            asyncBidiStreamingCall(
               new MethodHandlers<
                 ma.enset.subs.Bank.ConvertCurrencyRequest,
                 ma.enset.subs.Bank.ConvertCurrencyResponse>(
@@ -314,7 +314,7 @@ public final class BankServiceGrpc {
      */
     public io.grpc.stub.StreamObserver<ma.enset.subs.Bank.ConvertCurrencyRequest> fullCurrencyStream(
         io.grpc.stub.StreamObserver<ma.enset.subs.Bank.ConvertCurrencyResponse> responseObserver) {
-      return asyncClientStreamingCall(
+      return asyncBidiStreamingCall(
           getChannel().newCall(getFullCurrencyStreamMethod(), getCallOptions()), responseObserver);
     }
   }
